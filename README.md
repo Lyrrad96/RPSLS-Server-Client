@@ -6,10 +6,6 @@ processes will be running when a game is being played, the server and two instan
 
 ![](https://codecademy-discourse.s3.amazonaws.com/original/5X/1/e/9/a/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715.jpg)
 
-# How To Play
-## Step 1:
-Run the Server instance
-
 # Server
 The server moderates zero or more games between two players (client processes). The server will create two stream sockets with port number 60000 and waits for requests to play a game from two clients. Once a connection has been made with two clients, the server sends a message to both players informing each of the two players names and asking for their hand gestures (one of rock, paper, scissors, lizard or Spock) for a game of rpsls; it then waits for each to send their gesture. Once both players send their gesture, the server decides who wins and informs both players who won that round and asks for their gestures for the next round. The game is repeated until one (or both) players wishes to stop playing. When no more games are to be played the server sends, to both players, the game statistics and then the server closes both sockets, which ends the game and the process terminates.
 ### Command Line Argument:
