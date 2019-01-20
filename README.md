@@ -8,14 +8,22 @@ processes will be running when a game is being played, the server and two instan
 
 # Tutorial
 ## Step 1
-Compile the C source codes using the make file then, run the _rpsls_server_ excutable file. As shown below:
+Compile the C source codes using the make file then, run the _rpsls_server_ excutable file.
+As shown below:
 
 <img src="screenshots/rpsls_server_ss.png" width="700">
 
 ## Setp 2
-Run the _rpsls_client_ excutable file with the servers _IP Address_ as command line argument and wait for it to connect to the server. Once connected, it will ask for you to enter your name, at which point you should do so to continue. As shown below:
+Run the _rpsls_client_ excutable file with the servers _IP Address_ as command line argument and wait for it to connect to the server. Once connected, it will ask for you to enter your name, at which point you should do so to continue.
+As shown below:
 
 <img src="screenshots/one_client_connect.png" width="700">
+
+## Setp 3
+Once you enter your name, the process holds until the other player is connected. Then as both players are connected, the server sends the player details to the both the clients (i.e. players) and the first round begins.
+As shown below:
+
+<img src="screenshots/both_client_connect.png" width="700">
 
 # Server
 The server moderates zero or more games between two players (client processes). The server will create two stream sockets with port number 60000 and waits for requests to play a game from two clients. Once a connection has been made with two clients, the server sends a message to both players informing each of the two players names and asking for their hand gestures (one of rock, paper, scissors, lizard or Spock) for a game of rpsls; it then waits for each to send their gesture. Once both players send their gesture, the server decides who wins and informs both players who won that round and asks for their gestures for the next round. The game is repeated until one (or both) players wishes to stop playing. When no more games are to be played the server sends, to both players, the game statistics and then the server closes both sockets, which ends the game and the process terminates.
