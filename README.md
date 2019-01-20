@@ -10,7 +10,7 @@ processes will be running when a game is being played, the server and two instan
 ## Step 1
 Compile the C source codes using the make file then, run the _rpsls_server_ excutable file. As shown below:
 
-![](/screenshots/rpsls_server_ss.png)
+<img src="screenshots/rpsls_server_ss.png">
 
 ## Setp 2
 Run the _rpsls_client_ excutable file with the servers _IP Address_ as command line argument and wait for it to connect to the server. Once connected, it will ask for you to enter your name, at which point you should do so to continue. As shown below:
