@@ -20,17 +20,17 @@ As shown below:
 <img src="screenshots/one_client_connect.png" width="700">
 
 ## Setp 3
-Once you enter your name, the process holds until the other player is connected. As both players connect, the server sends the players detail to both the clients (i.e. players) and the first round begins.
+- Once you enter your name, the process holds until the other player is connected. As both players connect, the server sends the players detail to both the clients (i.e. players) and the first round begins.
 As shown below:
 
 <img src="screenshots/both_client_connect.png" width="700">
 
-The client process, after submitting the first play, holds for the other player to submit their first play to the server.
+- The client process, after submitting the first play, holds for the other player to submit their first play to the server.
 As shown below:
 
 <img src="screenshots/client_one_first_play.png" width="700">
 
-Next, as the server gets both the players play, it determines who won the first round and sends the details to the clients.
+- Next, as the server gets both the players play, it determines who won the first round and sends the details to the clients.
 As shown below:
 
 <div>
