@@ -20,10 +20,24 @@ As shown below:
 <img src="screenshots/one_client_connect.png" width="700">
 
 ## Setp 3
-Once you enter your name, the process holds until the other player is connected. Then as both players are connected, the server sends the player details to the both the clients (i.e. players) and the first round begins.
+Once you enter your name, the process holds until the other player is connected. As both players connect, the server sends the players detail to both the clients (i.e. players) and the first round begins.
 As shown below:
 
 <img src="screenshots/both_client_connect.png" width="700">
+
+The client process, after submitting the first play, holds for the other player to submit their first play to the server.
+As shown below:
+
+<img src="screenshots/client_one_first_play.png" width="700">
+
+Next, as the server gets both the players play, it determines who won the first round and sends the details to the clients.
+As shown below:
+
+<div>
+  <img src="screenshots/client_one_round_one.png" width="700">
+  <img src="screenshots/client_two_round_one.png" width="700">
+</div>
+
 
 # Server
 The server moderates zero or more games between two players (client processes). The server will create two stream sockets with port number 60000 and waits for requests to play a game from two clients. Once a connection has been made with two clients, the server sends a message to both players informing each of the two players names and asking for their hand gestures (one of rock, paper, scissors, lizard or Spock) for a game of rpsls; it then waits for each to send their gesture. Once both players send their gesture, the server decides who wins and informs both players who won that round and asks for their gestures for the next round. The game is repeated until one (or both) players wishes to stop playing. When no more games are to be played the server sends, to both players, the game statistics and then the server closes both sockets, which ends the game and the process terminates.
