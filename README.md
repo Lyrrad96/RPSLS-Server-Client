@@ -13,7 +13,7 @@ Compile the C source codes using the make file then, run the _rpsls_server_ excu
 ![](/screenshots/rpsls_server_ss.png)
 
 ## Setp 2
-Run the _rpsls_client_ excutable file with servers _IP Address_ as argument and wait for it to connect to the server. Once connected, it will ask for you to enter your name, at which point you should do so to continue. As shown below:
+Run the _rpsls_client_ excutable file with the servers _IP Address_ as command line argument and wait for it to connect to the server. Once connected, it will ask for you to enter your name, at which point you should do so to continue. As shown below:
 
 ![](/screenshots/one_client_connect.png)
 
