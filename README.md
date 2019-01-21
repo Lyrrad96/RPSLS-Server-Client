@@ -31,6 +31,7 @@ As shown below:
 <img src="screenshots/client_one_first_play.png" width="700">
 
 - Next, as the server gets both the players play, it determines who won the first round and sends the details to the clients.
+The client side then outputs a _win_ or _lose_ status to the respective client, as well as the winners name.
 As shown below:
 
 <div>
