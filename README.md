@@ -36,8 +36,10 @@ As shown below:
 The client side then outputs a _win_ or _lose_ status to the respective client, as well as the winners name.
 As shown below:
 
+<div>
   <img src="screenshots/client_one_round_one.png" width="700">
   <img src="screenshots/client_two_round_one.png" width="700">
+</div>
 
 ## Step 4
 Finally, when one of the player quits the game (by entering **e**), the server sends the game statistics to both the clients and terminates the connection.
