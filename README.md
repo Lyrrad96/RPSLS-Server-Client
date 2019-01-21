@@ -2,9 +2,11 @@
 A server-client version of the rock-paper-scissor-lizard-splock (rpsls) game created in C using system calls. The game server, which is implemented in rpsls_server.c, will moderate one or more games of rpsls between two clients, which is implemented in rpsls_client.c. Three
 processes will be running when a game is being played, the server and two instances of the client. First, the server instance is run and it waits for clients to connect by looking for connections on port 60000. Next, the two client instances are run, trying to connect to the server using the _server IP Address_ given. Once the connection is intialized, the clients can only send one of 6 messages (for each game) to the server: **r** for rock, **p** for paper, **s** for scissors, **l** for lizard, **S** for Spock, or **e** for end. As one (or both) player(s) end the game, the game statistics are displayed on both the players screen and the processes terminate.
 
+
 # Rules
 
 ![](https://codecademy-discourse.s3.amazonaws.com/original/5X/1/e/9/a/1e9ae22826a47a2d2e9f0e8f0f0cdf21a8479715.jpg)
+
 
 # Tutorial:
 ## Step 1
@@ -47,6 +49,7 @@ As shown below:
   <img src="screenshots/client_one_end_game.png" width="700">
   <img src="screenshots/client_two_end_game.png" width="700">
 </div>
+
 
 # Detailed summary:
 ## Server
